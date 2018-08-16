@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-family: arial;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+}
+
+.navbar-section {
+	width: 12%;
+	height:100vh;
+	font-family: arial;
+	box-shadow: 10px 0px 20px -10px #aaaaaa;
+}
+
+.name-div {
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.name {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 35px;
+	line-height: 1;
+	color: #8FD8D2;
+}
+
+.title {
+	font-size: 16px;
+	color: gray;
+	text-decoration: none;
+}
+
+.nav-link-div {
+	border-top: 1px solid gray;
+	padding-top: 20px;
+}
+
+.nav-link-list {
+	list-style-type: none;
+	padding-left: 15px
+}
+
+.nav-link-list li {
+	line-height: 3;	
+}
+
+.nav-icon {
+	height: 20px;
+}
+
+.nav-link {
+	font-family: arial;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin: 0px 20px;
+}
+
+.main-section {
+	width: 88%;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+.header-img-section {
+	height:100vh;
+	background: url(../images/devon.png);
+	background-repeat: no-repeat;
+}
+
+.about-section {
+	background-color: white !important;
+}
+
+.section-header {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	padding: 20px 0px 20px 20px;
+	font-size: 40px;
+}
+
+.about {
+	background-color: #FAD0C3;
+}
+
+.portfolio {
+	background-color: #DF744A;
+}
+
+.skills {
+	background-color: #DFBA88;
+}
+
+.contact {
+	background-color: #DCB239;
+}
+
+.about-content {
+	background-color: white;
+	font-size: 25px;
+	font-family: 'Raleway', arial;
+	padding: 30px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.about-emphasized {
+	font-size: 35px;
+	border-left: 5px solid black;
+	padding-left: 30px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+.portfolio-section {
+	background: url(../images/organic-tiles.png);
+}
+
+.portfolio-content {
+	padding: 75px 0px 10px 0px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.project-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}
+
+.project-div {
+	background-color: white;
+    box-shadow: 3px 3px 20px #888888;
+    width: 32%;
+}
+
+.project-img {
+	height: 200px;
+	background-color: #e2e2e2;
+	text-align: center;
+	color: gray;
+	font-size: 60px;
+}
+
+.KYW-img {
+	height: 200px;
+	background: url(../images/KYW-small.png) no-repeat;
+}
+
+.KYW-img:hover {
+	opacity: 0.5;
+}
+
+.Bites-img {
+	height: 200px;
+	background: url(../images/Bites-ATX-small.png);
+	background-repeat: no-repeat;
+}
+
+.Bites-img:hover {
+	opacity: 0.5;
+}
+
+.Caitlin-img {
+	height: 200px;
+	background: url(../images/Logo.png);
+}
+
+.project-info {
+	padding: 25px 25px;
+	position: relative;
+	z-index: 5;
+}
+
+.title {
+	font-size: 25px;
+	font-family: 'Raleway', arial;
+}
+
+.description {
+	font-size: 17px;
+}
+
+.skills-section {
+	background: url(../images/organic-tiles.png);
+}
+
+.skills-content {
+	padding: 75px 0px;
+}
+
+.skill-div {
+	background-color: white;
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.skill-name {
+	font-size: 28px;
+	font-family: 'Quicksand', sans-serif;
+	padding: 30px 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.skill-icons {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
+}
+
+.single-icon {
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.front {
+	width: 60%;
+}
+
+.back {
+	width: 37%;
+}
+
+.icon {
+	height: 80px;
+}
+
+.small-icon {
+	height: 60px;
+}
+
+.contact-section {
+	height: 100vh;
+	background: url(../images/organic-tiles.png);
+}
+
+.contact-content {
+	font-size: 17px;
+	width: 25%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.row {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.row a {
+	text-decoration: none;
+}
+
+.contact-icon {
+	width: 14%;
+	height: 50px;
+}
+
+.contact-text {
+	padding-top: 10px;
+	width: 80%;
+}
+
+/*Modal Styling*/
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+
+/*#DFBA88*/
+/*#DCB239*/
+/*#FAD0C3*/
+/*#DF744A*/
