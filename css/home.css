@@ -6,6 +6,16 @@
 	width: 100%;
 }
 
+.navbar {
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.collapsible-header {
+	font-size: 20px;
+	color: gray;
+}
+
 .collapsible-body ul {
 	line-height: 3;
 }
@@ -70,6 +80,11 @@
 .main-section {
 	overflow-y: auto;
 	scroll-behavior: smooth;
+}
+
+.row .col.main-section {
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .header-img-section {
@@ -162,20 +177,25 @@
 	padding-top: 10px;
 }
 
-/*Modal Styling*/
+.scroll-top{
+	position: fixed;
+	bottom: 15px;
+	left: 20px;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.4s ease-in-out 0s;
+	cursor: pointer;
+}
 
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-	padding: 0;
+.scroll-top-icon {
+	color: #8FD8D2;
 }
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
-}
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-	padding: 0;
+
+.scroll-top p {
+	margin-top: 0px;
+	font-size: 2vh;
+	color: gray;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -185,6 +205,10 @@
 
 	.about-emphasized {
 		font-size: 25px;
+	}
+
+	.collapsible-header {
+		font-size: 18px;
 	}
 }
 
