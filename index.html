@@ -7,12 +7,31 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<div class="container">
+<div class="row">
 
-	<div class="navbar-section">
+	<ul class="col s12 collapsible show-on-medium-and-down hide-on-large-only">
+		<li>
+			<div class="collapsible-header"><i class="material-icons">menu</i>Devon Worland</div>
+	      	<div class="collapsible-body">
+	      		<ul>
+	      			<li><img src="./images/about.png" class="nav-icon"><a href="#about" class="nav-link">About</a></li>
+	      			<li><img src="./images/portfolio.png" class="nav-icon"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+	      			<li><img src="./images/skills.png" class="nav-icon"><a href="#skills" class="nav-link">Skills</a></li>
+	      			<li><img src="./images/contact.png" class="nav-icon"><a href="#contact" class="nav-link">Contact</a></li>
+					<li><img src="./images/file.png" class="nav-icon"><a href="./images/DWResume.pdf" target="_blank" class="nav-link">Resume</a></li>
+	      		</ul>
+	      	</div>
+	  	</li>
+	</ul>
+
+	<div class="col s12 m2 l2 show-on-large hide-on-med-and-down navbar-section">
 
 		<div class="name-div">
 
@@ -42,73 +61,184 @@
 
 	</div>
 
+	<div class="col s12 m12 l10 main-section">
 
-	<div class="main-section" id="main">
+		<img class="responsive-img" src="./images/devon.png">
 
-		<div class="header-img-section">
+		<!-- <div class="header-img-section"></div> -->
+
+		<div class="about section-header" id="about">About Me</div>
+
+		<div class="about-content">
+
+			<blockquote class="about-emphasized">Hi! I'm Devon, a junior full-stack web developer specializing in front-end design.</blockquote>
+
+			<p>My approach to design is simplistic, functional, and innovative. I strive to create applications that are immersive and attractive, while remaining practical and user-friendly. I'm obsessed with the creative process; it's addictive and has never ending possibilities.</p>
 
 		</div>
 
-		<div class="about-section" id="about">
+		<div class="portfolio section-header" id="portfolio">Portfolio</div>
 
-			<div class="about section-header">About Me</div>
+		<div class="portfolio-content">
 
-			<div class="about-content">
+			<div class="row">
 
-				<p class="about-emphasized">Hi! I'm Devon, a junior full-stack web developer specializing in front-end design.</p>
+				<div class="col s12 m6 l4">
 
-				<p>My approach to design is simplistic, functional, and innovative. I strive to create applications that are immersive and attractive, while remaining practical and user-friendly. I'm obsessed with the creative process; it's addictive and has never ending possibilities.</p>
+					<div class="card medium">
+
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./images/Know-Your-Worth.png">
+						</div>
+
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Know Your Worth<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Know Your Worth<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							<ul>
+								<li><u>Created with:</u></li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JQuery</li>
+								<li>Materialize</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col s12 m6 l4">
+
+					<div class="card medium">
+
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/Bites-ATX.png">
+						</div>
+
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Bites ATX<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Bites ATX<i class="material-icons right">close</i></span>
+							<p>An application used to make reservations at local restaurants in Austin, TX.</p>
+							<ul>
+								<li><u>Created with:</u></li>
+								<li>React</li>
+								<li>Mongo DB</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col s12 m6 l4">
+
+					<div class="card medium">
+
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/office.jpg">
+						</div>
+
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Caitlin Kuncl Design<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Caitlin Kuncl Design<i class="material-icons right">close</i></span>
+							<p>An interior design portfolio.</p>
+							<ul>
+								<li><u>Created with:</u></li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JQuery</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
 
 			</div>
 
-		</div>
+			<div class="row">
 
-		<div class="portfolio-section" id="portfolio">
+				<div class="col s12 m6 l4">
 
-			<div class="portfolio section-header">Portfolio</div>
+					<div class="card medium">
 
-			<div class="portfolio-content">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/office.jpg">
+						</div>
 
-				<div class="project-row">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Ready Set Wonder<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
 
-					<div class="project-div">
-
-						<a href="./images/Know-Your-Worth.png" class="image-popup-no-margins"><div class="KYW-img"></div></a>
-
-						<div class="project-info">
-
-							<p class="title open-kyw">Know Your Worth></a>
-
-							<p class="description">A job search tool for students graduating from the UT Coding Bootcamp</p>
-
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Ready Set Wonder<i class="material-icons right">close</i></span>
+							<p>A fashion and lifestyle blog.</p>
+							<ul>
+								<li><u>Created with:</u></li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JQuery</li>
+								<li>Materialize</li>
+								<li>Wordpress</li>
+							</ul>
 						</div>
 
 					</div>
 
-					<div class="project-div">
+				</div>
 
-						<a href="./images/Bites-ATX.png" class="image-popup-no-margins"><div class="Bites-img"></div></a>
+				<div class="col s12 m6 l4">
 
-						<div class="project-info">
+					<div class="card medium">
 
-							<p class="title open-bites">Bites ATX></p>
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/office.jpg">
+						</div>
 
-							<p class="description">An application used for restaurant reservations</p>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
 
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
 						</div>
 
 					</div>
 
-					<div class="project-div">
+				</div>
 
-						<div class="Caitlin-img"></div>
+				<div class="col s12 m6 l4">
 
-						<div class="project-info">
+					<div class="card medium">
 
-							<p class="title open-ckuncl">Caitlin Kuncl Design></p>
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/office.jpg">
+						</div>
 
-							<p class="description">An Interior Design Portfolio<br>(In progress)</p>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
 
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
 						</div>
 
 					</div>
@@ -119,19 +249,19 @@
 
 		</div>
 
-		<div class="skills-section" id="skills">
+		<div class="skills section-header" id="skills">Skills</div>
 
-			<div class="skills section-header">Skills</div>
+		<div class="skills-content">
 
-			<div class="skills-content">
-
-				<div class="skill-div">
-
+			<div class="row">
+				
+				<div class="col s12 m12 l12 skill-div">
+					
 					<div class="skill-name">Front-End</div>
 
-					<div class="skill-icons front">
+					<div class="skill-icons">
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/html.png" class="icon">
 
@@ -139,7 +269,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/css.png" class="icon">
 
@@ -147,7 +277,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/bootstrap.png" class="icon">
 
@@ -155,7 +285,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/materialize.png" class="icon">
 
@@ -167,13 +297,17 @@
 
 				</div>
 
-				<div class="skill-div">
+			</div>
 
+			<div class="row">
+				
+				<div class="col s12 m12 l12 skill-div">
+					
 					<div class="skill-name">Javascript</div>
 
-					<div class="skill-icons front">
+					<div class="skill-icons">
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/javascript.png" class="icon">
 
@@ -181,7 +315,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/jquery.png" class="icon">
 
@@ -189,7 +323,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/hode.jpg" class="icon">
 
@@ -197,7 +331,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/react.png" class="icon">
 
@@ -209,23 +343,27 @@
 
 				</div>
 
-				<div class="skill-div">
+			</div>
 
+			<div class="row">
+				
+				<div class="col s12 m12 l12 skill-div">
+					
 					<div class="skill-name">Back-End</div>
 
-					<div class="skill-icons back">
+					<div class="skill-icons">
 
-						<div class="single-icon">
+						<div class="col s12 m12 l2 skill">
 
-							<img src="./images/mysql.jpg" class="small-icon">
+							<img src="./images/mysql.jpg" class="icon">
 
 							<p>MySQL</p>
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s12 m12 l2 skill">
 
-							<img src="./images/mongo.png" class="small-icon">
+							<img src="./images/mongo.png" class="icon">
 
 							<p>MongoDB</p>
 
@@ -235,13 +373,17 @@
 
 				</div>
 
-				<div class="skill-div">
+			</div>
 
+			<div class="row">
+				
+				<div class="col s12 m12 l12 skill-div">
+					
 					<div class="skill-name">Other</div>
 
-					<div class="skill-icons back">
+					<div class="skill-icons">
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/github2.png" class="icon">
 
@@ -249,7 +391,7 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/photoshop.png" class="icon">
 
@@ -257,11 +399,19 @@
 
 						</div>
 
-						<div class="single-icon">
+						<div class="col s6 m6 l2 skill">
 
 							<img src="./images/heroku.png" class="icon">
 
 							<p>Heroku</p>
+
+						</div>
+
+						<div class="col s6 m6 l2 skill">
+
+							<img src="./images/wordpress.png" class="icon">
+
+							<p>WordPress</p>
 
 						</div>
 
@@ -273,38 +423,50 @@
 
 		</div>
 
-		<div class="contact-section" id="contact">
+		<div class="contact section-header" id="contact">Contact</div>	
 
-			<div class="contact section-header">Contact</div>
+		<div class="contact-content">
 
-			<div class="contact-content">
+			<div class="row">
 
-				<div class="row">
-
+				<div class="col s10 offset-s1 m4 offset-m4 l4 offset-l4 contact-row">
+				
 					<img src="./images/phone.png" class="contact-icon">
 
 					<div class="contact-text">650-906-2581</div>
 
 				</div>
 
-				<div class="row">
+			</div>
 
+			<div class="row">
+
+				<div class="col s10 offset-s1 m4 offset-m4 l4 offset-l4 contact-row">
+				
 					<img src="./images/mail.png" class="contact-icon">
 
 					<div class="contact-text">devon.worland@gmail.com</div>
 
 				</div>
 
-				<div class="row">
+			</div>
 
+			<div class="row">
+
+				<div class="col s10 offset-s1 m4 offset-m4 l4 offset-l4 contact-row">
+				
 					<img src="./images/github.png" class="contact-icon">
 
 					<div class="contact-text"><a href="https://www.github.com/dworland">github.com/dworland</a></div>
 
 				</div>
 
-				<div class="row">
+			</div>
 
+			<div class="row">
+
+				<div class="col s10 offset-s1 m4 offset-m4 l4 offset-l4 contact-row">
+				
 					<img src="./images/linkedin.png" class="contact-icon">
 
 					<div class="contact-text"><a href="https://www.linkedin.com/in/devon-worland/">linkedin/com/in/devon-worland</a></div>
@@ -312,14 +474,14 @@
 				</div>
 
 			</div>
-
+			
 		</div>
 
 	</div>
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script type="text/javascript" src="./js/home.js"></script>
 
 

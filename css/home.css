@@ -4,21 +4,22 @@
 
 .container {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	font-family: arial;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
+}
 
+.collapsible-body ul {
+	line-height: 3;
 }
 
 .navbar-section {
-	width: 12%;
 	height:100vh;
 	font-family: arial;
-	box-shadow: 10px 0px 20px -10px #aaaaaa;
+/*	position: fixed;
+	top: 0;
+	left: 0;*/
+}
+
+.nav-wrapper {
+	background-color: white;
 }
 
 .name-div {
@@ -28,9 +29,10 @@
 
 .name {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 35px;
+	font-size: 4vh;
 	line-height: 1;
 	color: #8FD8D2;
+	margin-bottom: 0;
 }
 
 .job-title {
@@ -46,7 +48,7 @@
 
 .nav-link-list {
 	list-style-type: none;
-	padding-left: 15px
+	margin-left: 15px
 }
 
 .nav-link-list li {
@@ -66,25 +68,18 @@
 }
 
 .main-section {
-	width: 88%;
 	overflow-y: auto;
 	scroll-behavior: smooth;
 }
 
 .header-img-section {
 	height:100vh;
-	background: url(../images/devon.png);
-	background-repeat: no-repeat;
-}
-
-.about-section {
-	background-color: white !important;
 }
 
 .section-header {
 	color: white;
 	font-family: 'Quicksand', sans-serif;
-	padding: 20px 0px 20px 20px;
+	padding: 2vh 0px 2vh 2vh;
 	font-size: 40px;
 }
 
@@ -115,87 +110,17 @@
 
 .about-emphasized {
 	font-size: 35px;
-	border-left: 5px solid black;
-	padding-left: 30px;
 	font-family: 'Libre Franklin', sans-serif;
 }
 
-.portfolio-section {
+.portfolio-content,
+.skills-content {
 	background: url(../images/organic-tiles.png);
-}
-
-.portfolio-content {
-	padding: 75px 0px 10px 0px;
-	width: 85%;
-	margin: 0 auto;
-}
-
-.project-row {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 75px;
-}
-
-.project-div {
-	background-color: white;
-    box-shadow: 3px 3px 20px #888888;
-    width: 32%;
+	padding: 5vh;
 }
 
 .project-img {
-	height: 200px;
-	background-color: #e2e2e2;
-	text-align: center;
-	color: gray;
-	font-size: 60px;
 
-}
-
-.KYW-img {
-	width: 100%;
-	height: 200px;
-	background: url(../images/KYW-small.png) no-repeat;
-}
-
-.KYW-img:hover {
-	opacity: 0.5;
-}
-
-.Bites-img {
-	background: url(../images/Bites-ATX-small.png) no-repeat;
-	width: 100%;
-	height: 200px;
-}
-
-.Bites-img:hover {
-	opacity: 0.5;
-}
-
-.Caitlin-img {
-	height: 200px;
-	width: 100%;
-	background: url(../images/Logo.png) no-repeat;
-}
-
-.project-info {
-	padding: 25px 25px;
-}
-
-.title {
-	font-size: 25px;
-	font-family: 'Raleway', arial;
-}
-
-.description {
-	font-size: 17px;
-}
-
-.skills-section {
-	background: url(../images/organic-tiles.png);
-}
-
-.skills-content {
-	padding: 75px 0px;
 }
 
 .skill-div {
@@ -214,63 +139,33 @@
 }
 
 .skill-icons {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 40px;
+	padding: 2vh;
 }
 
-.single-icon {
+.skill {
 	text-align: center;
-	font-weight: bold;
-	font-size: 17px;
-}
-
-.front {
-	width: 60%;
-}
-
-.back {
-	width: 37%;
 }
 
 .icon {
-	height: 80px;
-}
-
-.small-icon {
-	height: 60px;
-}
-
-.contact-section {
-	height: 100vh;
-	background: url(../images/organic-tiles.png);
+	height: 8vh;
 }
 
 .contact-content {
-	font-size: 17px;
-	width: 25%;
-	margin: 0 auto;
-	margin-top: 50px;
+	background: url(../images/organic-tiles.png);
+	height: 90vh;
+	padding: 5vh;
 }
 
-.row {
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.row a {
-	text-decoration: none;
+.contact-row {
+	text-align: center;
 }
 
 .contact-icon {
-	width: 14%;
-	height: 50px;
+	height: 7vh;
 }
 
 .contact-text {
 	padding-top: 10px;
-	width: 80%;
 }
 
 /*Modal Styling*/
@@ -289,9 +184,20 @@
 	padding: 0;
 }
 
+@media #{$medium-and-down} {
+    // styles for medium screens and down
+  }
 
 
-/*#DFBA88*/
-/*#DCB239*/
-/*#FAD0C3*/
-/*#DF744A*/
+
+
+
+
+
+
+
+
+
+
+
+
