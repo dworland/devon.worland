@@ -103,7 +103,7 @@
 	background-color: white;
 	font-size: 25px;
 	font-family: 'Raleway', arial;
-	padding: 5vh 10vh;
+	padding: 5vh;
 }
 
 .about-emphasized {
@@ -115,10 +115,6 @@
 .skills-content {
 	background: url(../images/organic-tiles.png);
 	padding: 5vh;
-}
-
-.project-img {
-
 }
 
 .skill-div {
@@ -182,9 +178,25 @@
 	padding: 0;
 }
 
-@media #{$medium-and-down} {
-    // styles for medium screens and down
-  }
+@media screen and (max-width: 600px) {
+	.about-content {
+		font-size: 18px;
+	}
+
+	.about-emphasized {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 994px) and (min-width: 601px) {
+	.about-content {
+		font-size: 21px;
+	}
+
+	.about-emphasized {
+		font-size: 31px;
+	}
+}
 
 
 
